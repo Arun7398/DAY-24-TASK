@@ -1,0 +1,83 @@
+.App{
+    text-align: center;
+    margin: 0%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+h1{
+    text-transform: capitalize;
+    margin-top: auto;
+    text-decoration: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-area{
+    padding: 2px;
+    justify-content:center;
+    text-transform: capitalize;
+}
+
+.btn-size{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    gap: 1rem;
+}
+
+.btn-primary{
+    padding: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    gap: 1rem;
+    width: 50px
+}
+
+.product-data{
+    display:grid;
+    grid-template-columns: repeat(4,20%);
+    gap:5rem;
+    padding: 5%;
+    height:auto;
+}
+
+@media (max-width:600px){
+    .App{
+        text-align: center;
+        margin: 0px;
+        display: grid;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .product-data{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        gap:2rem;
+        padding: 5%;
+    }
+
+    .btn-size{
+        padding: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-primary{
+        padding: 2px;
+        text-transform: capitalize;
+        margin-right: 5px;
+    }
+}
+
+.btn-cart{
+    margin-left: 80%;
+    border: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
